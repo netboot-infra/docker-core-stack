@@ -65,7 +65,7 @@ services:
       start_period: 20s
       test: ["CMD-SHELL", "pg_isready -d keycloak -U keycloak"]
       timeout: 5s
-    image: postgres:18.2@sha256:9b5bd946f3a507db72c55959700e517463e8d5dbb6f7eb30d920d5bcf6951431
+    image: postgres:18.3@sha256:5aa97b304990f15e4625725b124c47df65746ec249bd3e2fdf3cf9dbd458326d
     networks:
       - backend
     tmpfs:
