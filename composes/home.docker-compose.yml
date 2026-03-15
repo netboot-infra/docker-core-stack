@@ -56,7 +56,7 @@ services:
       retries: 3
       test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000 > /dev/null 2>&1 || exit 1"]
       timeout: 15s
-    image: ghcr.io/gethomepage/homepage@sha256:0b596092c0b55fe4c65379a428a3fe90bd192f10d1b07d189a34fe5fabe7eedb
+    image: ghcr.io/gethomepage/homepage@sha256:b129cb0f674bd6d204e215bde2c2fc3f11d6ad0e82f6d20007cf80f74e1acbb1
     networks:
       - public
       - vpn
