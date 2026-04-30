@@ -35,7 +35,7 @@ services:
         - "traefik.http.routers.dozzle.middlewares=auth-admin"
     environment:
       !!merge <<: *common-env
-    image: amir20/dozzle@sha256:bb7df69b177814466e01397f5d44baabb56dc2fe9c6f7f18b61ce137428452d2
+    image: amir20/dozzle@sha256:2f8d5c2b6181533a58246313b1d840a69ae04e6c1010e2f6bb52c2228342b443
     networks:
       - public
     security_opt:
