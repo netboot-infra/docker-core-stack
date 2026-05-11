@@ -28,7 +28,7 @@ services:
       !!merge <<: *common-env
       COLLECTIONS: "crowdsecurity/traefik crowdsecurity/http-cve crowdsecurity/http-dos"
       CUSTOM_HOSTNAME: crowdsec
-    image: crowdsecurity/crowdsec:latest@sha256:6ca53ad26196ca59ddd4fa692a586b73d8fcde085046163b9ca2f04887dca563
+    image: crowdsecurity/crowdsec:latest@sha256:2f527c9bb8b367120eb08b82890aa912ce96bfa1ada93dda0721700e4b4e0dde
     networks:
       - backend
     user: "1000:1000"
